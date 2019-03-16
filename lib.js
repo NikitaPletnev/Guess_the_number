@@ -1,11 +1,11 @@
 //Задаю функцию старта игры
-var start = (function() {
+let start = (function() {
   //Задаю основные значения 
-  var attempt = 9;
-  var secretNum = Math.floor(Math.random() * 1000) + 1;
+  let attempt = 9;
+  let secretNum = Math.floor(Math.random() * 1000) + 1;
   //Основная логика игры
   return function() {
-    var n;//Промежуточная переменная для работы цикла 
+    let n;//Промежуточная переменная для работы цикла 
     while (!n) n = +prompt('Угадайте число');
     //Циклы проверки
     while (attempt > 0) {
